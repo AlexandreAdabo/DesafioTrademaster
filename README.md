@@ -56,7 +56,7 @@ Objetivo: Distribuir carga e garantir resiliência (com retry e DLQ).
 
 3. Crie um arquivo .env com as seguintes variáveis 
    
-# RabbitMQ 
+ **RabbitMQ** 
 RABBITMQ_URL=
 RABBITMQ_CONFIG_RECONNECT=
 RABBITMQ_CONFIG_BACKOFF_STRATEGY=
@@ -64,14 +64,14 @@ RABBITMQ_CONFIG_BACKOFF_TIME=
 RABBITMQ_CONFIG_EXPONENTIAL_LIMIT=
 RABBITMQ_CONFIG_RECONNECT_ATTEMPTS=
 
-# PostgreSQL
+ **PostgreSQL**
 POSTGRES_HOST=
 POSTGRES_PORT=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
 POSTGRES_DB=
 
-# API
+ **API**
 PORT=
 
 ## Rotas da API
@@ -84,6 +84,7 @@ Descrição: Envia mensagens para a fila de mensageria.
 
 ## Estrutura de Pastas
 
+   ```text
  ├── /src
  │   ├── /producers   # Publicadores de eventos
  │   ├── /consumers   # Consumidores (Workers)
